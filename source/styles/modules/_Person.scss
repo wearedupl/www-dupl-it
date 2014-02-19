@@ -1,0 +1,102 @@
+.Persons {
+	text-align: center;
+}
+
+.Person {
+	display: inline-block;
+	width: 16.125em; /* 258 / 16 */
+	margin: 0 2.25em; /* 36 / 16 */
+	text-align: center;
+	color: #000;
+	vertical-align: top;
+	position: relative;
+
+	&:first-child {
+		margin-bottom: 7.5em; /* 120 / 16 */
+	}
+}
+
+.Person-main {
+
+}
+
+.Person-jobTitles {
+	margin: 0 0 2.66666667em 0; /* 48 / 18 */
+	padding: 0;
+	list-style: none;
+	font-family: "latobolditalic", sans-serif;
+	font-size: 1.125em; /* 18 / 16 */
+	line-height: 1.5;
+	color: #333;
+
+	&:after {
+		//content: "";
+		height: 0.0625em; /* 1 / 16 */
+		width: 100%; /* 24 / 16 */
+		background: #dedede;
+		display: block;
+		margin: 3em auto 0 auto; /* 48 / 16 */
+		font-size: 0.88888889em; /* 16 / 18 */
+	}
+}
+
+.Person-description {
+	font-size: 1.3125em; /* 21 / 16 */
+	font-family: "aleoregular", sans-serif;
+	line-height: 1.7;
+	color: #333;
+}
+
+.Person-jobTitles,
+.Person-description {
+	background: $lightGray;
+}
+
+.Person-name {
+	font-family: "latobolditalic", sans-serif;
+	margin-bottom: 0.57142857em; /* 12 / 21 */
+	font-size: 1.3125em; /* 21 / 16 */
+	font-size: 48px;
+	position: absolute;
+	top: 200px;
+	margin: auto;
+	width: 100%;
+	color: #333;
+	background: rgba($lightGray, .65);
+	padding: 6px 0;
+	box-shadow: 
+		0 15px 15px  -15px rgba(#000, .25),
+		0 -15px 15px  -15px rgba(#000, .25);
+	border: solid #fff;
+	border-width: 1px 0 1px 0;
+}
+
+.Person-head {
+	position: relative;
+	width: 15em; /* 240 / 16 */
+	height: 15em; /* 240 / 16 */
+	margin: 0 auto 3em auto; /* 48 / 16 */
+	border: 0.5625em solid $lightGray; /* 9 / 16 */
+	@include border-radius(50%);
+	overflow: hidden;
+}
+
+.Person-head-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+@media only screen and (min-width: 664px) {
+	.Person {
+		&:first-child {
+			margin-bottom: 0;	
+		}
+		
+	}
+}

@@ -1,0 +1,40 @@
+a {
+	color: $white;
+	text-decoration: none;
+}
+
+.Meta {
+
+	font-family: "lato";
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin-bottom: 48px;
+	margin-right: 24px;
+	position: relative;
+
+	&:before, &:after {
+		content: "";
+		width: 12px;
+		height: 3px;
+		background: $white;
+		position: absolute;
+		top: -12px;
+		left: 0;
+	}
+}
+
+.Meta-term {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-align: left;
+	opacity: .65;
+}
+
+.Meta-data {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}

@@ -1,0 +1,16 @@
+.Background {
+	background: red url(../images/page-bg.jpg) no-repeat bottom left;
+	background-size: cover;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+
+.Page {
+	height: 100%;
+}
+
+.Page--isCropped {
+	overflow: hidden;	
+}

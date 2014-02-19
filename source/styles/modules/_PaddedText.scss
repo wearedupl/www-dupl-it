@@ -1,0 +1,28 @@
+.PaddedText {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	font-family: "aleoregular", sans-serif;
+	font-size: 3em;
+	line-height: 1;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+
+	b {
+		font-family: "latobolditalic", sans-serif;
+	}
+}
+
+.PaddedText-line {
+	padding: 0.125em 0.25em; // 2 / 16, 4 / 16
+	display: block;
+	background-color: $lightBlue;
+	color: $white;	
+}
+
+@media only screen and (min-width: 664px) {
+	.PaddedText {
+		font-size: 4em;
+	}
+}

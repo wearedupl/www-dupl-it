@@ -1,0 +1,21 @@
+@mixin prefixer( $property, $value, $vendors: webkit moz, $spec: true ) {
+	@each $vendor in $vendors {
+		-#{$vendor}-#{$property}: #{$value};
+	}
+
+	@if $spec {
+		#{$property}: #{$value};
+	}
+}
+
+@mixin border-radius( $args... ) {
+	@include prefixer( border-radius, $args );
+}
+
+@mixin transform( $args... ) {
+	@include prefixer( transform, $args, webkit moz ms o );
+}
+
+@mixin transition( $args... ) {
+	@include prefixer( transition, $args, webkit moz o );
+}

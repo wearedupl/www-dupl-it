@@ -1,0 +1,18 @@
+.NavTags {
+	text-align: center;
+	padding: 6em 0; // 96 / 16
+}
+
+.NavTags-item {
+	display: inline-block;
+	margin: 0 0.5em; // 12 / 24
+	padding-bottom: 0.125em; // 3 / 24
+	font: 1.5em/1.2 "latoregular", sans-serif; // 24 / 16
+	text-transform: lowercase;
+	text-decoration: none;
+	color: $white;
+}
+
+.NavTags-item--isCurrent {
+	border-bottom: 0.16666667em solid $white; // 4 / 24
+}

@@ -1,0 +1,19 @@
+{
+	"camelcase": true,
+	"curly": true,
+	"eqeqeq": true,
+	"expr": true,
+	"newcap": true,
+	"noempty": true,
+	"undef": true,
+	"quotmark": "single",
+	"unused": true,
+	"browser": true,
+	"devel": true,
+
+
+	"globals": {
+		"module": true,
+		"require": true
+	}
+}

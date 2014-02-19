@@ -1,0 +1,161 @@
+.PortfolioItem {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+	overflow: auto;
+	background: $lightGray;
+	padding: 144px 12px 12px 12px;
+	font-family: "latoregular", sans-serif;
+	-webkit-overflow-scrolling: touch;
+}
+
+.PortfolioItem-main {
+	max-width: 960px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+}
+
+.PortfolioItem-close {
+	position: absolute;
+	top: -96px;
+	left: 0;
+	height: 48px;
+	width: 48px;
+	@include transform(rotate(45deg));
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	//z-index: 50;
+
+	&:before,
+	&:after {
+		content: "";
+		width: 6px;
+		height: 100%;
+		background: $orangeRed;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	&:after {
+		height: 6px;
+		width: 100%;
+	}
+}
+
+.PortfolioItem-figure {
+	margin-bottom: 12px;
+	position: relative;
+	width: 100%;
+}
+
+.PortfolioItem-description {
+	color: #333;
+	width: 75%;
+	display: inline-block;
+	text-align: left;
+
+	> p {
+		margin: 0 0 12px 0;
+
+		&:first-of-type {
+			font-family: "aleoregular", sans-serif;
+			font-size: 21px;
+			text-indent: 1em;
+			margin: 12px 0 48px 0;
+		}
+
+		> a {
+			color: $orangeRed;
+		}
+	}
+}
+
+.PortfolioItem-name {
+	margin: 48px 0 0 0;
+	padding: 0;
+	font-family: "aleoregular", sans-serif;
+	text-transform: lowercase;
+	font-size: 21px;
+	font-weight: normal;
+	color: $orangeRed;
+}
+
+.PortfolioItem-tagsLine {
+	color: #999;
+}
+
+.PortfolioItem-tagsLine-hash {
+	color: $orangeRed;
+}
+
+.PortfolioItem-figure-image {
+	display: block;
+	//max-width: 100%;
+	width: 100%
+}
+
+.PortfolioItem-figure-caption {	
+	padding: 12px;
+	font-size: 12px;	
+	width: 75%;
+	color: #999;
+	text-align: left;
+}
+
+.PortfolioItem-back {
+	color: $orangeRed;
+	text-transform: uppercase;
+	margin-top: 36px;
+	display: inline-block;
+	font-size: 36px;
+}
+
+.PortfolioItem-footer {
+	text-align: center;
+	position: relative;
+	max-width: 960px;
+	margin: 144px auto 48px;
+	font-family: "aleoregular", sans-serif;
+
+
+	.Brand {
+		width: 24px;
+		height: 24px;
+		vertical-align: middle;
+		margin-bottom: 12px;
+
+		&:before,
+		&:after {
+			background-color: #333;
+		}
+	}
+
+	a {
+		display: block;
+		color: #333;
+		line-height: 1.5;
+
+		.at {
+			margin: 0 3px;
+		}
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.PortfolioItem-description {
+		> p {
+		&:first-of-type {
+			font-size: 36px;
+		}
+		}
+	}
+}

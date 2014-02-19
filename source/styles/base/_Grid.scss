@@ -1,0 +1,68 @@
+.Group {
+	&:after {
+		display: table;
+		clear: both;
+		content: "";
+	}
+}
+
+%Unit {
+	float: left;
+
+	&:last-child {
+		float: right;
+	}
+}
+
+@media screen and (min-width: 40.5em) {
+.Unit,
+.Unit--1of2,
+.Unit--1of3,
+.Unit--2of3,
+.Unit--1of4,
+.Unit--2of4,
+.Unit--3of4,
+.Unit--1of5,
+.Unit--2of5,
+.Unit--3of5,
+.Unit--4of5 {
+	float: left;
+}
+
+.Unit--1of2,
+.Unit--2of4 {
+	width: 50%;
+}
+
+.Unit--1of3 {
+	width: 33.33333333%;
+}
+
+.Unit--2of3 {
+	width: 66.66666666%;
+}
+
+.Unit--1of4 {
+	width: 25%;
+}
+
+.Unit--3of4 {
+	width: 75%;
+}
+
+.Unit--1of5 {
+	width: 20%;
+}
+
+.Unit--2of5 {
+	width: 40%;
+}
+
+.Unit--3of5 {
+	width: 60%;
+}
+
+.Unit--4of5 {
+	width: 80%;
+}
+}

@@ -1,0 +1,32 @@
+module.exports = [
+
+	'<div class="PortfolioItem">',
+		'<div class="PortfolioItem-main">',
+			'<a href="#" class="PortfolioItem-close">Chiudi</a>',
+			'<% _.each(assets, function (asset) { %>',
+			'<% if (asset.type === "image") { %>',
+			'<div class="PortfolioItem-figure">',
+				'<img class="PortfolioItem-figure-image" src="<%= asset.src %>">',
+				'<% if (asset.caption) { %>',
+				'<p class="PortfolioItem-figure-caption"><%= asset.caption %></p>',
+				'<% } %>',
+			'</div>',
+			'<% } else if (asset.type === "vimeo") { %>',
+				'<iframe class="PortfolioItem-figure" src="//player.vimeo.com/video/<%= asset.src %>" width="960" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+			'<% } else if (asset.type === "youtube") { %>',
+				'<iframe class="PortfolioItem-figure" width="960" height="480" src="//www.youtube.com/embed/<%= asset.src %>" frameborder="0" allowfullscreen></iframe>',
+			'<% } %>',
+			'<% }) %>',
+			'<div class="PortfolioItem-description">',
+				'<h1 class="PortfolioItem-name"><%= name %></h1>',
+				'<div class="PortfolioItem-tagsLine"><span class="PortfolioItem-tagsLine-hash">#</span><%= tags.join(", ") %></div>',
+				'<% if (!_.isEmpty(description)) { %>',
+				'<p><%= description.join("</p><p>") %></p>',
+				'<% } %>',
+				'<a href="#" class="PortfolioItem-back">&larr;</a>',
+			'</div>',
+		'</div>',
+		'<div class="PortfolioItem-footer"><div class="Brand">Dupl</div><a href="mailto:hello@dupl.it">hello<span class="at">@</span>dupl.it</a><a href="/">dupl.it</a></div>',
+	'</div>'
+
+].join('\n');

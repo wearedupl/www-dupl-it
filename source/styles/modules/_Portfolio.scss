@@ -1,0 +1,139 @@
+.PortfolioItem {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+	overflow: auto;
+	background: $lightGray;
+	padding-top: 96px;
+	font-family: lato;
+}
+
+.PortfolioItem-main {
+}
+
+.PortfolioItem-aside {
+	padding-left: 48px;
+	margin-left: -24px;
+	font-size: 18px;
+	color: #999;
+}
+
+.PortfolioItem-close {
+	position: absolute;
+	top: 24px;
+	left: 12px;
+	height: 48px;
+	width: 48px;
+	@include transform(rotate(45deg));
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	z-index: 50;
+
+	&:before,
+	&:after {
+		content: "";
+		width: 6px;
+		height: 100%;
+		background: $orangeRed;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	&:after {
+		height: 6px;
+		width: 100%;
+	}
+}
+
+.PortfolioItem-figure {
+	margin-bottom: 12px;
+	position: relative;
+}
+
+.PortfolioItem-name {
+	color: #333;
+	font-family: aleo, sans-serif;
+	font-size: 48px;
+	margin: 0 0 48px 0;
+	padding: 0;
+	line-height: 1;
+}
+
+.PortfolioItem-figure-image {
+	display: block;
+	//max-width: 100%;
+	width: 100%
+}
+
+.PortfolioItem-figure-caption {
+	display: none;
+	padding: 12px;
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+}
+
+.PortfolioItem-description {
+	//background: $orangeRed;
+	//padding: 24px 24px 24px 48px;
+	//@include border-radius(0 12px 12px 12px);
+	//margin-left: -48px;
+	//position: relative;
+	//color: $white;
+	
+	margin-bottom: 48px;
+	font-family: aleo;
+
+	span {
+		//border-bottom: 3px solid $orangeRed;
+		line-height: 1.5;
+		font-size: 21px;
+		color: #333;
+	}
+	
+
+	&:before {
+		content: "";
+		border: 24px solid;
+		border-color: $orangeRed $orangeRed $lucid $lucid;
+		position: absolute;
+		left: -48px;
+		top: 0;
+	}
+}
+
+.PortfolioItem-footer {
+	clear: both;
+	text-align: center;
+	margin: 144px 0 48px;
+	position: relative;
+
+
+	.Brand {
+		width: 24px;
+		height: 24px;
+		margin-bottom: 24px;
+
+		&:before,
+		&:after {
+			background-color: #333;
+		}
+	}
+
+	a {
+		display: block;
+		color: #333;
+
+		.at {
+			margin: 0 3px;
+		}
+	}
+}

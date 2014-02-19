@@ -1,0 +1,113 @@
+.Overlay {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	z-index: 100;
+
+	background: $lightBlue;
+	background: rgba($lightBlue, .9);
+}
+
+.Overlay-Spinner {
+	position: absolute;
+	width: 4.5em; // 72 / 16
+	height: 4.5em; // 72 / 16
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.Overlay--is-abortable,
+.Overlay--is-error {
+	.Overlay-close {
+		display: block;
+	}
+}
+
+.Overlay--is-error {
+	background: $orangeRed;
+	background: rgba($orangeRed, .9);
+
+	.Overlay-close {
+		display: block;
+
+		&:before,
+		&:after {
+			background: $orangeRed;
+		}
+	}
+
+	.Spinner {
+		border-color: $white;
+		-webkit-animation: none;
+  	-moz-animation: none;
+  	-o-animation: none;
+  	animation: none;
+	}
+}
+
+.Overlay-close {
+	display: none;
+	position: absolute;
+	z-index: 50;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 3em; // 48 / 16
+	height: 3em;
+	margin: auto;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: $white;
+	@include border-radius(50%);
+	@include transform(rotate(45deg));
+	
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		width: 60%;
+		height: 0.375em; // 6 / 16
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: $lightBlue;
+	}
+
+	&:after {
+		height: 60%;
+		width: 0.375em; // 6 / 16
+	}
+}
+
+.Overlay-Text {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	color: $white;
+
+	&:before {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.125em;
+	}
+
+	.Text {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1.5;
+	}	
+}

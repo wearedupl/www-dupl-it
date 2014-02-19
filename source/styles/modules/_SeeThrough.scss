@@ -1,0 +1,17 @@
+.SeeThrough {	
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../images/SeeThrough--intro.jpg);
+	position: fixed;
+	z-index: -1;
+}
+
+@media only screen and (min-width: 1440px) {
+	.SeeThrough {
+		background-size: cover;
+	}
+}

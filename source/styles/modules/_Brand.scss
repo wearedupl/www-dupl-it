@@ -1,0 +1,35 @@
+.Brand {
+	display: inline-block;
+	position: relative;
+	height: 100%; /* declare in context */
+	width: 100%; /* declare in context */
+	padding: 0;
+	margin: 0;
+	font-size: 0.625em; /* 10 / 16 */
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		width: 66.66666666%;
+		height: 66.66666666%;
+		background: $white;
+	}
+
+	&:before {
+		right: 0;
+		top: 0;
+
+		@include border-radius(0 50% 50% 0);
+	}
+
+	&:after {
+		left: 0;
+		bottom: 0;
+
+		@include border-radius(50% 0 0 50%);
+	}
+}
