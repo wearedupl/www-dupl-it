@@ -1,5 +1,21 @@
 module.exports = [
 	{
+		name: 'Dupl',
+		tags: ['brand'],
+		assets: [
+			'images/portfolio/dupl0.png',
+			'images/portfolio/dupl1.png',
+			'images/portfolio/dupl2.png',
+			'images/portfolio/dupl3.png',
+			{src: 'images/portfolio/dupl4.png', caption: 'L&rsquo;ambigramma sottolinea l&rsquo;eterogeneit&agrave; delle competenze.'},
+			'images/portfolio/dupl5.png'
+		],
+		description: [
+			'Progetto personale per la promozione della coppia creativa.'
+		]
+	},
+
+	{
 		name: 'Cougar Special Force',
 		tags: ['brand'],
 		assets: [

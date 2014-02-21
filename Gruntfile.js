@@ -97,7 +97,8 @@ module.exports = function (grunt) {
 						'webfonts/*.*',
 						'images/**/*.svg',
 						'index.html',
-						'favicon*.*'
+						'favicon*.*',
+						'sitemap.txt'
 					],
 					dest: 'public'
 				}]

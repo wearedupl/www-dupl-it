@@ -29,7 +29,7 @@
 	padding: 2em 0 4.5em 0; /* 96 / 48, 216 / 48 */
 	text-align: center;
 	font-family: "aleoregular", sans-serif;
-	font-size: 3em; /* 48 / 16 */
+	font-size: 2.25em; /* 36 / 16 */
 	line-height: 1;
 	font-weight: 400;
 
@@ -49,10 +49,16 @@
 }
 
 .Section--where-Organization {
-	padding: 144px 12px;
+	padding: 9em 0.75em; /* 144 / 16, 12 / 16 */
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 30em) { /* 480 / 16 */
+	.Section--who-hero {
+		font-size: 3em; /* 48 / 16 */
+	}
+}
+
+@media only screen and (min-width: 45em) { /* 720 / 16 */
 	.Section--where-Organization {
 		padding: 0;
 		height: 100%;

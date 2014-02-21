@@ -29,6 +29,7 @@
   list-style: none; 
   width: 100%;
   margin: 0;
+  overflow: hidden;
   //@include transition(-webkit-transform .3s ease);
 
   -webkit-transition: -webkit-transform .3s ease;
@@ -41,7 +42,7 @@
 
 .Work-url {
   display: block;
-  overflow: hidden;
+  //overflow: hidden;
   height: 100%;
   width: 100%;
   position: relative;
