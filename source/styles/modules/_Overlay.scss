@@ -10,6 +10,10 @@
 	background: rgba($lightBlue, .9);
 }
 
+.Overlay--solid {
+	background: $lightBlue;
+}
+
 .Overlay-Spinner {
 	position: absolute;
 	width: 4.5em; // 72 / 16

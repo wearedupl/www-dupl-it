@@ -42,7 +42,7 @@
 
     # Make SVGZ fonts work on the iPad.
     # https://twitter.com/FontSquirrel/status/14855840545
-    AddType     image/svg+xml                           svgz
+    AddType     image/svg+xml                           svg svgz
     AddEncoding gzip                                    svgz
 
   # Other
@@ -98,10 +98,6 @@ AddDefaultCharset utf-8
         </IfModule>
     </IfModule>
 
-    # Compress all output labeled with one of the following MIME-types
-    # (for Apache versions below 2.3.7, you don't need to enable `mod_filter`
-    #  and can remove the `<IfModule mod_filter.c>` and `</IfModule>` lines
-    #  as `AddOutputFilterByType` is still in the core directives).
     <IfModule mod_filter.c>
         AddOutputFilterByType DEFLATE application/atom+xml \
                                       application/javascript \
@@ -134,11 +130,6 @@ AddDefaultCharset utf-8
 </IfModule>
 
 FileETag None
-
-# The following expires headers are set pretty far in the future. If you
-# don't control versioning with filename-based cache busting, consider
-# lowering the cache time for resources such as style sheets and JavaScript
-# files to something like one week.
 
 <IfModule mod_expires.c>
 

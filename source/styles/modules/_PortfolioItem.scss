@@ -8,7 +8,7 @@
 	overflow: auto;
 	background: $lightGray;
 	padding: 144px 12px 12px 12px;
-	font-family: "latoregular", sans-serif;
+	font-family: "Lato", sans-serif;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -67,7 +67,7 @@
 		margin: 0 0 12px 0;
 
 		&:first-of-type {
-			font-family: "aleoregular", sans-serif;
+			font-family: "Aleo", sans-serif;
 			font-size: 21px;
 			text-indent: 1em;
 			margin: 12px 0 48px 0;
@@ -82,7 +82,7 @@
 .PortfolioItem-name {
 	margin: 48px 0 0 0;
 	padding: 0;
-	font-family: "aleoregular", sans-serif;
+	font-family: "Aleo", sans-serif;
 	text-transform: lowercase;
 	font-size: 21px;
 	font-weight: normal;
@@ -99,7 +99,6 @@
 
 .PortfolioItem-figure-image {
 	display: block;
-	//max-width: 100%;
 	width: 100%
 }
 
@@ -124,7 +123,7 @@
 	position: relative;
 	max-width: 960px;
 	margin: 144px auto 48px;
-	font-family: "aleoregular", sans-serif;
+	font-family: "Aleo", sans-serif;
 
 
 	.Brand {

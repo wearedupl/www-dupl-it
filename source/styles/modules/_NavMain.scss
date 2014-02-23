@@ -2,7 +2,7 @@
 
 .NavMain-items {
 	position: fixed;
-	z-index: 10;
+	z-index: 15;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -21,7 +21,7 @@
 		height: 4em; /* 72 / 18 */
 		padding-left: 6em;	
 		border-bottom: 1px solid rgba($lightBlue, .25);
-		font: 1.125em/4em "latoregular", sans-serif; /* 18 / 16, 72 / 18 */
+		font: 1.125em/4em "Lato", sans-serif; /* 18 / 16, 72 / 18 */
 		text-transform: lowercase;
 		color: $lightBlue;
 		text-decoration: none;

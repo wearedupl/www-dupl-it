@@ -7,6 +7,19 @@
 	<meta name="description" content="Dupl &egrave; il portfolio online di Federico Bassi e Lucia Fiandaca, un duo creativo multidisciplinare di Caserta.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+	<script>
+	/** 
+	 * Fix for flash of unstyled content 
+	 */
+	(function () {
+		var d = document, e = d.documentElement, s = d.createElement('style');
+		s.textContent = 'body{visibility:hidden}';
+		var r = d.scripts[0];
+		r.parentNode.insertBefore(s, r);
+		function f(){ s.parentNode && s.parentNode.removeChild(s); }
+		addEventListener('load',f,false);
+	})();
+	</script>
 	<!-- build:css styles/style.min.css --><link rel="stylesheet" media="screen, projection" href="styles/style.css"><!-- endbuild -->
 </head>
 <body>
@@ -82,17 +95,14 @@
 					<li class="Organization-url"><a href="//github.com/wearedupl" class="Organization-url-link">GitHub</a></li>
 				</ul>
 
-				<div class="Organization-Brand">
+				<div class="Organization-copy">
 					&copy; 2014 Dupl.
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<!-- build:js scripts/bundle.min.js -->
-<script src="scripts/bundle.js"></script>
-<!-- endbuild -->
+<!-- build:js scripts/bundle.min.js --><script src="scripts/bundle.js"></script><!-- endbuild -->
 <script>
 	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
 	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

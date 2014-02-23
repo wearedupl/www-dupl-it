@@ -32,9 +32,14 @@ module.exports = Backbone.View.extend({
 		var
 			max = crittersMap.length,
 			index = Math.floor(Math.random() * max),
-			critter = crittersMap[index];
+			critter = crittersMap[index],
+			that = this;
 		
 		this.setElement(this.template(critter));
 		this.$el.appendTo(this.config.parent);
+
+		window.addEventListener('load', function () {
+			that.$el.addClass('Critter--isGreeting');
+		}, false);
 	}
 });

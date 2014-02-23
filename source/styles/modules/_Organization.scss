@@ -1,12 +1,12 @@
 .Organization {
 	text-align: center;
-	max-width: 720px;
+	max-width: 45em; /* 720 / 16 */
 }
 
 .Organization-email {
 	display: block;
-	font-size: 48px;
-	font-family: "aleoregular", sans-serif;
+	font-size: 2.25em; /* 36 / 16 */
+	font-family: "Aleo", sans-serif;
 	margin: 72px 0 48px 0;
 }
 
@@ -15,11 +15,10 @@
 }
 
 .Organization-urls {
-	margin-bottom: 72px;
+	margin-bottom: 4.5em; /* 72 / 16 */
 }
 
 .Organization-url {
-	//margin: 0 0 24px 0;
 	display: block;
 
 	&:last-child {
@@ -31,44 +30,26 @@
 
 .Organization-url-link {
 	display: block;
+	padding: 1.5em 0; /* 24 / 16 */
 	text-transform: uppercase;
-	font-family: "latobold", sans-serif;
+	font-family: "Lato", sans-serif;
 	border-bottom: 1px solid rgba($white, .25);
-	padding: 24px 0;
 }
 
-.Organization-Brand {
-
-	//position: absolute;
-	bottom: 24px;
-	width: 100%;
-	left: 0;
-	font-size: 12px;
-
-	.Brand {
-
-		width: 24px;
-		height: 24px;
-		//position: absolute;
-		left: 50%;
-		bottom: 36px;
-		margin-left: -12px;
-
-		&:before,
-		&:after {
-			background-color: $white;
-		}
-	}
+.Organization-copy {
+	font-size: 0.75em; /* 12 / 16 */
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 30em) { /* 480 / 16 */
 	.Organization-email {
-		font-size: 64px;
+		font-size: 4em; /* 64 / 16 */
 	}
+}
 
+@media only screen and (min-width: 45em) { /* 720 / 16 */
 	.Organization-url {
 		display: inline-block;
-		margin: 12px;
+		margin: 0.75em; /* 12 / 16 */
 
 		&:last-child {
 			> a {
@@ -78,6 +59,6 @@
 	}
 
 	.Organization-url-link {
-		padding-bottom: 12px;
+		padding-bottom: 0.75em; /* 12 / 16 */
 	}
 }

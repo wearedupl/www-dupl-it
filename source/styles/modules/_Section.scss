@@ -28,13 +28,14 @@
 .Section--who-hero {
 	padding: 2em 0 4.5em 0; /* 96 / 48, 216 / 48 */
 	text-align: center;
-	font-family: "aleoregular", sans-serif;
+	font-family: "Aleo", sans-serif;
 	font-size: 2.25em; /* 36 / 16 */
 	line-height: 1;
 	font-weight: 400;
 
 	b {
-		font-family: "latobolditalic", sans-serif;
+		font-family: "Lato", sans-serif;
+		font-style: italic;
 	}
 
 	> span {
