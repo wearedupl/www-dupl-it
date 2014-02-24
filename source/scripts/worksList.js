@@ -8,7 +8,9 @@ module.exports = [
 			'images/portfolio/dupl2.png',
 			'images/portfolio/dupl3.png',
 			{src: 'images/portfolio/dupl4.png', caption: 'L&rsquo;ambigramma sottolinea l&rsquo;eterogeneit&agrave; delle competenze.'},
-			'images/portfolio/dupl5.png'
+			'images/portfolio/dupl5.png',
+			'images/portfolio/dupl6.jpg',
+			'images/portfolio/dupl7.jpg'
 		],
 		description: [
 			'Progetto personale per la promozione della coppia creativa.'
